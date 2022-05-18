@@ -31,7 +31,7 @@ class ViewController: UIViewController, UNUserNotificationCenterDelegate {
     @IBAction func searchPressed(_ sender: UIButton) {
         if let city = locationSearchTextField.text {
             weatherManager.fetchWeather(cityName: city)
-            sleep(1) //delays the display so that the method^ can finish running and update before displaying the information on the screen
+            sleep(2) //delays the display so that the method^ can finish running and update befrore displaying the information on the screen
 
             let defaults = UserDefaults.standard
             tempLabel.text = String(defaults.double(forKey: "WEATHER_INFORMATION_TEMP"))
