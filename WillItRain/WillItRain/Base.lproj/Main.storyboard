@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WnM-qJ-wee">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WnM-qJ-wee">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -80,6 +80,9 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="S2A-sq-OXK">
+                                <rect key="frame" x="117" y="187" width="180" height="179"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -90,6 +93,8 @@
                             <constraint firstItem="aua-J4-Bfw" firstAttribute="leading" secondItem="Zqn-rm-Bze" secondAttribute="leading" id="I0E-Gj-BJ7"/>
                             <constraint firstItem="QAC-1W-5UP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="26" id="IHi-4f-MHJ"/>
                             <constraint firstItem="Rz3-TX-4cJ" firstAttribute="top" secondItem="tHa-PY-5qZ" secondAttribute="bottom" constant="5" id="IR7-ph-aTZ"/>
+                            <constraint firstItem="S2A-sq-OXK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="117" id="RoO-Qm-S0J"/>
+                            <constraint firstItem="S2A-sq-OXK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WhM-IZ-BLi"/>
                             <constraint firstItem="Rz3-TX-4cJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XoT-BS-DPq"/>
                             <constraint firstItem="thP-le-KI1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="24" id="ZgZ-yp-cdt"/>
                             <constraint firstItem="aua-J4-Bfw" firstAttribute="top" secondItem="Zqn-rm-Bze" secondAttribute="bottom" constant="5" id="aIf-Fx-ZjC"/>
@@ -103,12 +108,15 @@
                             <constraint firstItem="QAC-1W-5UP" firstAttribute="leading" secondItem="thP-le-KI1" secondAttribute="trailing" constant="17" id="pNt-QS-qZx"/>
                             <constraint firstItem="tvL-Ym-8iB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="tAF-Ad-agM"/>
                             <constraint firstItem="aua-J4-Bfw" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="tgs-i7-cmX"/>
+                            <constraint firstItem="tHa-PY-5qZ" firstAttribute="top" secondItem="S2A-sq-OXK" secondAttribute="bottom" constant="40" id="uXu-Qi-Ulc"/>
+                            <constraint firstItem="S2A-sq-OXK" firstAttribute="top" secondItem="thP-le-KI1" secondAttribute="bottom" constant="40" id="uaw-51-Tl2"/>
                             <constraint firstItem="Rz3-TX-4cJ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="xdF-TT-bWr"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QAC-1W-5UP" secondAttribute="trailing" constant="41" id="zVJ-BW-0tf"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Rp1-p5-Aja"/>
                     <connections>
+                        <outlet property="iconImage" destination="S2A-sq-OXK" id="5zx-ch-Bfq"/>
                         <outlet property="locationSearchTextField" destination="thP-le-KI1" id="68r-T9-OEn"/>
                         <outlet property="maxTempLabel" destination="tvL-Ym-8iB" id="nf6-S0-Uch"/>
                         <outlet property="minTempLabel" destination="aua-J4-Bfw" id="HhK-iC-lGr"/>

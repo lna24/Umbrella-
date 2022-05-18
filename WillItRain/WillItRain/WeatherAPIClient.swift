@@ -64,6 +64,8 @@ struct WeatherManager{
             defaults.set(decodedData.wind.speed, forKey: "WEATHER_INFORMATION_WINDSPEED")
             
             defaults.set(decodedData.weather[0].description, forKey: "WEATHER_INFORMATION_CONDITIONS")
+            
+            defaults.set(decodedData.weather[0].icon, forKey: "WEATHER_INFORMATION_ICON")
         } catch {
             print(error)
         }

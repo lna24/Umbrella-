@@ -13,6 +13,7 @@ class ViewController: UIViewController, UNUserNotificationCenterDelegate {
     @IBOutlet weak var locationSearchTextField: UITextField!
     @IBOutlet weak var minTempLabel: UILabel!
     @IBOutlet weak var maxTempLabel: UILabel!
+    @IBOutlet var iconImage: UIImageView!
     
     var weatherManager = WeatherManager()
     let userNotificationCenter = UNUserNotificationCenter.current()
@@ -36,6 +37,11 @@ class ViewController: UIViewController, UNUserNotificationCenterDelegate {
             tempLabel.text = String(defaults.double(forKey: "WEATHER_INFORMATION_TEMP"))
             minTempLabel.text = String(defaults.double(forKey: "WEATHER_INFORMATION_TEMPMIN"))
             maxTempLabel.text = String(defaults.double(forKey: "WEATHER_INFORMATION_TEMPMAX"))
+            
+            let weatherIcon = String(defaults.string(forKey: "WEATHER_INFORMATION_ICON") ?? "no icon")
+            print("weather icon is \(weatherIcon)")
+            
+            iconImage.image = UIImage(named: weatherIcon)
         }
     }
 }
