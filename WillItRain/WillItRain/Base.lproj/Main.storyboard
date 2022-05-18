@@ -81,7 +81,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="S2A-sq-OXK">
-                                <rect key="frame" x="117" y="187" width="180" height="179"/>
+                                <rect key="frame" x="117" y="187" width="180" height="174"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -99,6 +99,7 @@
                             <constraint firstItem="thP-le-KI1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="24" id="ZgZ-yp-cdt"/>
                             <constraint firstItem="aua-J4-Bfw" firstAttribute="top" secondItem="Zqn-rm-Bze" secondAttribute="bottom" constant="5" id="aIf-Fx-ZjC"/>
                             <constraint firstItem="thP-le-KI1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="42" id="auy-Pn-TLC"/>
+                            <constraint firstItem="tHa-PY-5qZ" firstAttribute="top" secondItem="S2A-sq-OXK" secondAttribute="bottom" constant="45" id="bxP-k0-cFR"/>
                             <constraint firstItem="Rz3-TX-4cJ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="cnp-uU-nsB"/>
                             <constraint firstItem="thP-le-KI1" firstAttribute="centerY" secondItem="QAC-1W-5UP" secondAttribute="centerY" id="e9L-Hc-rFo"/>
                             <constraint firstItem="tvL-Ym-8iB" firstAttribute="trailing" secondItem="4Me-oz-bF4" secondAttribute="trailing" id="esI-5j-dq8"/>
@@ -108,7 +109,6 @@
                             <constraint firstItem="QAC-1W-5UP" firstAttribute="leading" secondItem="thP-le-KI1" secondAttribute="trailing" constant="17" id="pNt-QS-qZx"/>
                             <constraint firstItem="tvL-Ym-8iB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="tAF-Ad-agM"/>
                             <constraint firstItem="aua-J4-Bfw" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="tgs-i7-cmX"/>
-                            <constraint firstItem="tHa-PY-5qZ" firstAttribute="top" secondItem="S2A-sq-OXK" secondAttribute="bottom" constant="40" id="uXu-Qi-Ulc"/>
                             <constraint firstItem="S2A-sq-OXK" firstAttribute="top" secondItem="thP-le-KI1" secondAttribute="bottom" constant="40" id="uaw-51-Tl2"/>
                             <constraint firstItem="Rz3-TX-4cJ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="xdF-TT-bWr"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QAC-1W-5UP" secondAttribute="trailing" constant="41" id="zVJ-BW-0tf"/>

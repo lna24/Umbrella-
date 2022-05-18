@@ -26,6 +26,7 @@ class ViewController: UIViewController, UNUserNotificationCenterDelegate {
         tempLabel.text = String(defaults.double(forKey: "WEATHER_INFORMATION_TEMP"))
         minTempLabel.text = String(defaults.double(forKey: "WEATHER_INFORMATION_TEMPMIN"))
         maxTempLabel.text = String(defaults.double(forKey: "WEATHER_INFORMATION_TEMPMAX"))
+        //iconImage.image = UIImage(named: String(defaults.string(forKey: "WEATHER_INFORMATION_ICON") ?? "no icon"))
     }
     
     @IBAction func searchPressed(_ sender: UIButton) {
