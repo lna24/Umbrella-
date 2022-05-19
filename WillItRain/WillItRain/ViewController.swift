@@ -6,6 +6,7 @@
 //
 
 import UIKit
+//import UserNotifications
 
 class ViewController: UIViewController, UNUserNotificationCenterDelegate {
 
@@ -45,4 +46,38 @@ class ViewController: UIViewController, UNUserNotificationCenterDelegate {
             iconImage.image = UIImage(named: weatherIcon)
         }
     }
+    
+//    Implementation of Notifications to go here.
+    
+//      @IBAction func notificationRequest(_ sender: UIButton) {
+//        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound]) { success, error in if success {
+//                print("All Set")
+//        } else if let error = error {
+//            print(error.localizedDescription)
+//            }
+//        }
+//    }
+    
+//    @IBAction func scheduleNotification(_ sender: UIButton) {
+//        let content = UNMutableNotificationContent()
+//        content.title = "Today's Weather"
+//                print("All Set")
+//       if let currentWeather = weatherAPIClient.currentWeather {
+//            content.subtitle = currentWeather.weatherCode.description
+//        } else {
+//            content.subtitle =  "Could not retreive today's weather."
+//            }
+//        content.sound = UNNotificationSound.default
+
+        // show this notification five seconds from now
+//        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+
+        // choose a random identifier
+//        let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
+
+        // add our notification request
+//       UNUserNotificationCenter.current().add(request)
+//        }
+
+
 }
